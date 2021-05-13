@@ -1,14 +1,8 @@
-import React from "react";
-import "./ButtonPanel.css";
-import "./Button.css";
+import "./style.css";
 
-type CallBack = (...args: any[]) => void
+import { IPropsDisplay } from '../../interface';
 
-interface Props {
-  handler: CallBack;
-}
-
-const ButtonsPanel: React.FC<Props> = ({ handler }) => {
+const ButtonsPanel: React.FC<IPropsDisplay> = ({ handler }) => {
   return (
     <div className="component-button-panel">
       <div>
